@@ -62,7 +62,8 @@
             <p v-if="pageOne">
                 Tendrás que dar permiso a la cámara
                 <br>
-                <button v-if="pageOne" v-on:click="changePage(2)" class="btn-primary btn">Escanear</button>
+                <button v-on:click="changePage(2)" class="btn-primary btn">Escanear</button>
+                <a class="btn-primary btn"><a href="./barcode.html">Lotería</a>
             </p>
             
             <qrcode-stream v-if="pageTwo" @decode="onDecode" @init="onInit"></qrcode-stream>
